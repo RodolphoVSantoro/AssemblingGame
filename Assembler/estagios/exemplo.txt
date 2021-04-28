@@ -1,0 +1,16 @@
+#tamanho do campo
+tamanhoHorizontal, tamanhoVertical
+----------------------
+#recursos
+id, valor, imagem
+id, valor, imagem
+id, valor, imagem
+id, valor, imagem
+----------------------
+#maquinas
+quantidadeInputs, id1, id2, id3, quantidade1, quantidade2, quantidade3, idSaida, custoMaquina, imagem
+quantidadeInputs, id1, id2, id3, quantidade1, quantidade2, quantidade3, idSaida, custoMaquina, imagem
+----------------------
+#objetivos
+id, quantidade
+id, quantidade
