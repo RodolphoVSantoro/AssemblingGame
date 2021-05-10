@@ -6,6 +6,7 @@ import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.RenderingHints;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import util.Mouse;
@@ -46,8 +47,14 @@ public class Tela extends JPanel {
 		janela.setSize(LARGURATELA, ALTURATELA);
 		janela.setVisible(true);
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		tela.estagio = CriadorEstagio.criaEstagio("estagio1.txt");
+		
+		try {
+			tela.estagio = CriadorEstagio.criaEstagio("estagio1.txt");
+		} catch (Exception e1) {
+			JOptionPane.showMessageDialog(null, "Erro:"+e1.getMessage());
+		}
 		boolean started=false;
+		
 		while (jogoRodando) {
 			if(tela.estagio.checkStart()) {
 				started=true;
